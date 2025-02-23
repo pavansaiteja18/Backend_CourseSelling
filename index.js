@@ -5,10 +5,9 @@ app.use(express.json());
 
 const { userRouter } = require("./user"); 
 const { courseRouter } = require("./course");
-
+const {adminRouter}=require("./admin")
 app.use("/user", userRouter);
 app.use("/course", courseRouter);
+app.use("/admin",adminRouter)
 
-app.listen(3000, () => {
-    console.log("Server running on http://localhost:3000");
-});
+app.listen(3000);
