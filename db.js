@@ -1,12 +1,6 @@
 // const { Console } = require("console");
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/Coursera")
-.then(()=>{
-    console.log("Connected To MongoDB Server")
-})
-.catch(()=>{
-    console.log("Error in connecting to MongoDB Server")
-})
+
 // Use Schema and ObjectId from mongoose for creating models
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.Types.ObjectId;
